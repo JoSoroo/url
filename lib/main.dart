@@ -36,6 +36,7 @@ class _WebViewExampleState extends State<WebViewExample> {
     9: 'http://192.168.59.35:8088/display',
     10: 'http://192.168.50.35:8088/display',
     11: '',
+    12: 'http://192.168.49.35:8088/display',
   };
 
   bool _showAppBar = true;  // AppBar-ийг харуулах эсэхийг хянах хувьсагч
@@ -78,7 +79,7 @@ class _WebViewExampleState extends State<WebViewExample> {
                     });
                   },
                   itemBuilder: (BuildContext context) {
-                    return List.generate(10, (index) {
+                    return List.generate(12, (index) {
                       int number = index + 1;
                       return PopupMenuItem<int>(
                         value: number,
